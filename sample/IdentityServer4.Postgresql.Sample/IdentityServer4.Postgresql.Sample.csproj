@@ -5,7 +5,7 @@
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>IdentityServer4.Postgresql.Sample</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>IdentityServer4.Postgresql.Sample</PackageId>
+    <PackageId>IdentityServer4.PostgresqlUpdated.Sample</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
