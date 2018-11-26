@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Marten persistence layer for IdentityServer4 using PostgreSQL as a document store</Description>
     <VersionPrefix></VersionPrefix>
-    <Version>2.0.6</Version>
+    <Version>2.0.7</Version>
     <Authors>Sifiso Shezi;unusual-thoughts</Authors>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AssemblyName>IdentityServer4.Contrib.Postgresql</AssemblyName>
