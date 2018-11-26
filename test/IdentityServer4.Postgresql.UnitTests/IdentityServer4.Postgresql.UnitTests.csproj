@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyName>IdentityServer4.Postgresql.UnitTests</AssemblyName>
+    <AssemblyName>IdentityServer4.PostgresqlUpdated.UnitTests</AssemblyName>
     <PackageId>IdentityServer4.PostgresqlUpdated.UnitTests</PackageId>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>

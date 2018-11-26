@@ -6,7 +6,7 @@
     <Version>2.0.6</Version>
     <Authors>Sifiso Shezi</Authors>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyName>IdentityServer4.Postgresql</AssemblyName>
+    <AssemblyName>IdentityServer4.PostgresqlUpdated</AssemblyName>
     <PackageId>IdentityServer4.PostgresqlUpdated</PackageId>
     <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;Postgresql</PackageTags>
     <PackageProjectUrl>https://github.com/Sphiecoh/IdentityServer4.Postgresql</PackageProjectUrl>
