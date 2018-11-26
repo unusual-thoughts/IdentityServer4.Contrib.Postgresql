@@ -1,4 +1,4 @@
-namespace IdentityServer4.PostgresqlUpdated.Options
+namespace IdentityServer4.Contrib.Postgresql.Options
 {
     public class MartenOptions
     {

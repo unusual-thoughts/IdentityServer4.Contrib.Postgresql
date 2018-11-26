@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using IdentityServer4.PostgresqlUpdated.Extensions;
+using IdentityServer4.Contrib.Postgresql.Extensions;
 using Marten;
 using IdentityServer4.Models;
-using IdentityServer4.PostgresqlUpdated.Mappers;
-using IdentityServer4.PostgresqlUpdated.Entities;
+using IdentityServer4.Contrib.Postgresql.Mappers;
+using IdentityServer4.Contrib.Postgresql.Entities;
 
-namespace IdentityServer4.PostgresqlUpdated.Sample
+namespace IdentityServer4.Contrib.Postgresql.Sample
 {
 	public class Startup
 	{
@@ -57,9 +57,9 @@ namespace IdentityServer4.PostgresqlUpdated.Sample
 					session.StoreObjects(resources);
 				}
 
-				if (!session.Query<IdentityServer4.PostgresqlUpdated.Entities.IdentityResource>().Any())
+				if (!session.Query<IdentityServer4.Contrib.Postgresql.Entities.IdentityResource>().Any())
 				{
-					var resources = new List<IdentityServer4.PostgresqlUpdated.Entities.IdentityResource> {
+					var resources = new List<IdentityServer4.Contrib.Postgresql.Entities.IdentityResource> {
 						new IdentityResources.OpenId().ToEntity(),
 						new IdentityResources.Profile().ToEntity(),
 						new IdentityResources.Email().ToEntity(),
@@ -67,9 +67,9 @@ namespace IdentityServer4.PostgresqlUpdated.Sample
 					};
 					session.StoreObjects(resources);
 				}
-				if (!session.Query<IdentityServer4.PostgresqlUpdated.Entities.Client>().Any())
+				if (!session.Query<IdentityServer4.Contrib.Postgresql.Entities.Client>().Any())
 				{
-					var clients = new List<IdentityServer4.PostgresqlUpdated.Entities.Client>
+					var clients = new List<IdentityServer4.Contrib.Postgresql.Entities.Client>
 					{
 						  new Entities.Client
 							{

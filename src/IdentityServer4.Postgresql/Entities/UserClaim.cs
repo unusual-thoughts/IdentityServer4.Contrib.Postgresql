@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IdentityServer4.PostgresqlUpdated.Entities
+namespace IdentityServer4.Contrib.Postgresql.Entities
 {
     public abstract class UserClaim
     {

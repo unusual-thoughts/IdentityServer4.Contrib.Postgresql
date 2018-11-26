@@ -2,9 +2,9 @@ using System.Threading.Tasks;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
 using Marten;
-using IdentityServer4.PostgresqlUpdated.Mappers;
+using IdentityServer4.Contrib.Postgresql.Mappers;
 
-namespace IdentityServer4.PostgresqlUpdated.Stores
+namespace IdentityServer4.Contrib.Postgresql.Stores
 {
 	public class ClientStore : IClientStore
 	{

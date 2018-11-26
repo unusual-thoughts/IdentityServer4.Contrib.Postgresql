@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using IdentityServer4.PostgresqlUpdated.Mappers;
+using IdentityServer4.Contrib.Postgresql.Mappers;
 using Xunit;
 using GenFu;
-using IdentityServer4.PostgresqlUpdated.Entities;
-using IdentityServer4.PostgresqlUpdated.Stores;
+using IdentityServer4.Contrib.Postgresql.Entities;
+using IdentityServer4.Contrib.Postgresql.Stores;
 
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
-namespace IdentityServer4.PostgresqlUpdated.IntegrationTests.Stores
+namespace IdentityServer4.Contrib.Postgresql.IntegrationTests.Stores
 {
    
     public class PersistedGrantStoreTests : IClassFixture<DatabaseFixture>

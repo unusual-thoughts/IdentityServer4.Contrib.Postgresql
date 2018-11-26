@@ -1,8 +1,8 @@
-﻿using IdentityServer4.PostgresqlUpdated.Mappers;
+﻿using IdentityServer4.Contrib.Postgresql.Mappers;
 using Xunit;
 using Client = IdentityServer4.Models.Client;
 
-namespace IdentityServer4.PostgresqlUpdated.UnitTests
+namespace IdentityServer4.Contrib.Postgresql.UnitTests
 {
     public class ClientMapperTests
     {

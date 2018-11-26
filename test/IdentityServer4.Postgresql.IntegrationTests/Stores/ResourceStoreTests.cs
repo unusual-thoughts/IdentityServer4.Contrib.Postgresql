@@ -1,13 +1,13 @@
 ﻿using GenFu;
-using IdentityServer4.PostgresqlUpdated.Entities;
-using IdentityServer4.PostgresqlUpdated.Stores;
+using IdentityServer4.Contrib.Postgresql.Entities;
+using IdentityServer4.Contrib.Postgresql.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace IdentityServer4.PostgresqlUpdated.IntegrationTests.Stores
+namespace IdentityServer4.Contrib.Postgresql.IntegrationTests.Stores
 {
 	public class ResourceStoreTests : IClassFixture<DatabaseFixture>
 	{

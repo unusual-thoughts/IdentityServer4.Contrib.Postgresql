@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>IdentityServer4.PostgresqlUpdated.Sample</AssemblyName>
+    <AssemblyName>IdentityServer4.Contrib.Postgresql.Sample</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>IdentityServer4.PostgresqlUpdated.Sample</PackageId>
+    <PackageId>IdentityServer4.Contrib.Postgresql.Sample</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
