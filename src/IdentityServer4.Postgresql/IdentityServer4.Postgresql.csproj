@@ -9,6 +9,7 @@
     <AssemblyName>IdentityServer4.Contrib.Postgresql</AssemblyName>
     <PackageId>IdentityServer4.Contrib.Postgresql</PackageId>
     <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;Postgresql</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/unusual-thoughts/IdentityServer4.Postgresql/nuget/icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/unusual-thoughts/IdentityServer4.Postgresql</PackageProjectUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
