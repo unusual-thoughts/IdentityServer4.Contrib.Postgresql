@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using static IdentityServer4.IdentityServerConstants;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.PostgresqlUpdated.Entities
 {
     public abstract class Secret
     {

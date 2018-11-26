@@ -1,12 +1,12 @@
 ﻿using IdentityServer4.Services;
 using Marten;
 using Microsoft.Extensions.Logging;
-using IdentityServer4.Postgresql.Entities;
+using IdentityServer4.PostgresqlUpdated.Entities;
 using System.Linq;
 using System.Threading.Tasks;
 using System;
 
-namespace IdentityServer4.Postgresql.Services
+namespace IdentityServer4.PostgresqlUpdated.Services
 {
     public class CorsPolicyService : ICorsPolicyService
     {

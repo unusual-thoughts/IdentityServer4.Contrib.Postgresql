@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace IdentityServer4.Postgresql.Mappers
+namespace IdentityServer4.PostgresqlUpdated.Mappers
 {
     public class PersistedGrantMapperProfile : Profile
     {

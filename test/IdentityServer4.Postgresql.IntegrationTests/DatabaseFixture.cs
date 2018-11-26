@@ -1,7 +1,7 @@
 ﻿using System;
 using Marten;
 
-namespace IdentityServer4.Postgresql.IntegrationTests
+namespace IdentityServer4.PostgresqlUpdated.IntegrationTests
 {
 	public class DatabaseFixture : IDisposable
 	{

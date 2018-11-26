@@ -1,5 +1,5 @@
-﻿using IdentityServer4.Postgresql.Entities;
-using IdentityServer4.Postgresql.Options;
+﻿using IdentityServer4.PostgresqlUpdated.Entities;
+using IdentityServer4.PostgresqlUpdated.Options;
 using Marten;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IdentityServer4.Postgresql
+namespace IdentityServer4.PostgresqlUpdated
 {
     internal class TokenCleanup
     {

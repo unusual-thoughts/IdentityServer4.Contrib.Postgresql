@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using IdentityServer4.Models;
 
-namespace IdentityServer4.Postgresql.Mappers
+namespace IdentityServer4.PostgresqlUpdated.Mappers
 {
     public static class IdentityResourceMappers
     {

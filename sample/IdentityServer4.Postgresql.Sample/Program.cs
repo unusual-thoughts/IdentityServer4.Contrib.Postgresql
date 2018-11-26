@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace IdentityServer4.Postgresql.Sample
+namespace IdentityServer4.PostgresqlUpdated.Sample
 {
 	public class Program
 	{

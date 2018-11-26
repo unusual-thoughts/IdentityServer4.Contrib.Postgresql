@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using IdentityServer4.Postgresql.Entities;
+using IdentityServer4.PostgresqlUpdated.Entities;
 using System.Linq;
 
-namespace IdentityServer4.Postgresql.Mappers
+namespace IdentityServer4.PostgresqlUpdated.Mappers
 {
     public class ApiResourceMapperProfile : Profile
     {

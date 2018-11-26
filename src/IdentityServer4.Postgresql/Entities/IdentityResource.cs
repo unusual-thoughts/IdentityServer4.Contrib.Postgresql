@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.PostgresqlUpdated.Entities
 {
     public class IdentityResource : EntityKey
     {

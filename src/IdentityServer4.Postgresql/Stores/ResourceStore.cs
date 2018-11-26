@@ -1,13 +1,13 @@
 ﻿using IdentityServer4.Stores;
 using System;
 using System.Collections.Generic;
-using IdentityServer4.Postgresql.Mappers;
+using IdentityServer4.PostgresqlUpdated.Mappers;
 using System.Threading.Tasks;
 using IdentityServer4.Models;
 using Marten;
 using System.Linq;
 
-namespace IdentityServer4.Postgresql.Stores
+namespace IdentityServer4.PostgresqlUpdated.Stores
 {
 	public class ResourceStore : IResourceStore
 	{

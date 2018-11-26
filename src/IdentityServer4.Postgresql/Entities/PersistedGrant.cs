@@ -1,7 +1,7 @@
 ﻿using Marten.Schema;
 using System;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.PostgresqlUpdated.Entities
 {
     public class PersistedGrant : EntityKey
     {

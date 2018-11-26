@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using static IdentityServer4.IdentityServerConstants;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.PostgresqlUpdated.Entities
 {
 	public class Client : EntityKey
 	{
