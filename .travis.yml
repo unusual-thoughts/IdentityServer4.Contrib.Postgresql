@@ -16,6 +16,9 @@ addons:
     packages:
     
 script: 
+    - curl https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version 3.0.100
+    - if test "$TRAVIS_OS_NAME" == "linux"; then export PATH="/home/travis/.dotnet":"$PATH"; fi
+    - if test "$TRAVIS_OS_NAME" == "osx"; then export PATH="/Users/travis/.dotnet":"$PATH"; fi
     - chmod +x build.sh
     #- ./build.sh
     - dotnet restore
