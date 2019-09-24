@@ -2,6 +2,7 @@ using GenFu;
 using IdentityServer4.Contrib.Postgresql.Entities;
 using IdentityServer4.Contrib.Postgresql.Stores;
 using System.Linq;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace IdentityServer4.Contrib.Postgresql.IntegrationTests.Stores
