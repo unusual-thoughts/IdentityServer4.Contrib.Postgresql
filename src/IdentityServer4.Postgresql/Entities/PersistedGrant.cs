@@ -1,5 +1,4 @@
-﻿using Marten.Schema;
-using System;
+﻿using System;
 
 namespace IdentityServer4.Postgresql.Entities
 {

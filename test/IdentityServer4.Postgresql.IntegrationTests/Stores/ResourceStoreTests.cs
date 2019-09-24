@@ -1,8 +1,6 @@
 ﻿using GenFu;
 using IdentityServer4.Postgresql.Entities;
 using IdentityServer4.Postgresql.Stores;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;

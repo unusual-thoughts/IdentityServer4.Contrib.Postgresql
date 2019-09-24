@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using IdentityServer4.Postgresql.Entities;
 using System.Linq;
 using System.Threading.Tasks;
-using System;
 
 namespace IdentityServer4.Postgresql.Services
 {
