@@ -1,4 +1,6 @@
-﻿using IdentityServer4.Services;
+﻿using System;
+using System.Collections.Generic;
+using IdentityServer4.Services;
 using Marten;
 using Microsoft.Extensions.Logging;
 using IdentityServer4.Postgresql.Entities;
@@ -18,11 +20,19 @@ namespace IdentityServer4.Postgresql.Services
         }
         public async Task<bool> IsOriginAllowedAsync(string origin)
         {
-            var origins = await _documentSession.Query<Client>().SelectMany(x => x.AllowedCorsOrigins).Select(y => y.Origin).ToListAsync().ConfigureAwait(false);
-            var distinctOrigins = origins.Where(x => x != null).Distinct();
-            var isAllowed = distinctOrigins.Any(x => x.ToLower() == origin.ToLower());
+            var origins = await _documentSession.Query<Client>()
+                .SelectMany(x => x.AllowedCorsOrigins)
+                .Select(y => y.Origin)
+                .Distinct()
+                .ToListAsync().ConfigureAwait(false);
 
-            _logger.LogDebug("Origin {origin} is allowed: {originAllowed}", origin, isAllowed);
+            var distinctOrigins = new HashSet<string>(origins.Where(x => x != null), StringComparer.OrdinalIgnoreCase);
+            var isAllowed = distinctOrigins.Contains(origin.ToLower());
+
+            if (_logger.IsEnabled(LogLevel.Debug))
+            {
+                _logger.LogDebug("Origin {origin} is allowed: {originAllowed}", origin, isAllowed);
+            }
 
             return isAllowed;
 
