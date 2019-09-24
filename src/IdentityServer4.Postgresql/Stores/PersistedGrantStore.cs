@@ -1,12 +1,13 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using IdentityServer4.Models;
+using IdentityServer4.Stores;
+using IdentityServer4.Postgresql.Mappers;
 using Marten;
+
 namespace IdentityServer4.Postgresql.Stores
 {
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using IdentityServer4.Models;
-    using IdentityServer4.Stores;
-    using IdentityServer4.Postgresql.Mappers;
 
     public class PersistedGrantStore : IPersistedGrantStore
     {
@@ -24,7 +25,7 @@ namespace IdentityServer4.Postgresql.Stores
 
         public async Task<PersistedGrant> GetAsync(string key)
         {
-            var grant =  await _documentSession.Query<Entities.PersistedGrant>().FirstOrDefaultAsync(x => x.Key == key).ConfigureAwait(false);
+            var grant = await _documentSession.Query<Entities.PersistedGrant>().FirstOrDefaultAsync(x => x.Key == key).ConfigureAwait(false);
             return grant?.ToModel();
         }
 

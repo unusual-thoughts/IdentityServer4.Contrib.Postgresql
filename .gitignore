@@ -246,3 +246,6 @@ ModelManifest.xml
 # CAKE
 tools/
 /sample/IdentityServer4.Postgresql.Sample/Logs
+
+/.idea
+tempkey.rsa

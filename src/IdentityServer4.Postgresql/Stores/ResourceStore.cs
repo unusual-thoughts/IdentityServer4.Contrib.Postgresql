@@ -18,31 +18,44 @@ namespace IdentityServer4.Postgresql.Stores
 		}
 		public async Task<ApiResource> FindApiResourceAsync(string name)
 		{
-			var resource = await _documentSession.Query<Entities.ApiResource>().FirstOrDefaultAsync(_ => _.Name == name).ConfigureAwait(false);
+			var resource = await _documentSession.Query<Entities.ApiResource>()
+				.FirstOrDefaultAsync(_ => _.Name == name).ConfigureAwait(false);
+
 			return resource.ToModel();
 		}
 
-		public Task<IEnumerable<ApiResource>> FindApiResourcesByScopeAsync(IEnumerable<string> scopeNames)
+		public async Task<IEnumerable<ApiResource>> FindApiResourcesByScopeAsync(IEnumerable<string> scopeNames)
 		{
 			if (scopeNames == null) throw new ArgumentNullException(nameof(scopeNames));
 
-			var resources = _documentSession.Query<Entities.ApiResource>().ToList();
-			return Task.FromResult(resources.Where(x => scopeNames.Contains(x.Name)).Select(x => x.ToModel()).AsEnumerable());
+			var names = scopeNames.ToArray();
+			var resources = await _documentSession.Query<Entities.ApiResource>()
+				.Where(x => x.Name.IsOneOf(names))
+				.ToListAsync();
+
+			return resources.Select(x => x.ToModel());
 		}
 
-		public Task<IEnumerable<IdentityResource>> FindIdentityResourcesByScopeAsync(IEnumerable<string> scopeNames)
+		public async Task<IEnumerable<IdentityResource>> FindIdentityResourcesByScopeAsync(IEnumerable<string> scopeNames)
 		{
 			if (scopeNames == null) throw new ArgumentNullException(nameof(scopeNames));
 
-			var identities = _documentSession.Query<Entities.IdentityResource>().ToList();
-			return Task.FromResult(identities.Where(x => scopeNames.Contains(x.Name)).Select(x => x.ToModel()).AsEnumerable());
+			var names = scopeNames.ToArray();
+			var identities = await _documentSession.Query<Entities.IdentityResource>()
+				.Where(x => x.Name.IsOneOf(names))
+				.ToListAsync();
+
+			return identities.Select(x => x.ToModel());
 		}
 
-		public Task<Resources> GetAllResourcesAsync()
+		public async Task<Resources> GetAllResourcesAsync()
 		{
-			var identityResources = _documentSession.Query<Entities.IdentityResource>().ToList();
-			var apiResources = _documentSession.Query<Entities.ApiResource>().ToList();
-			return Task.FromResult(new Resources(identityResources.Select(x => x.ToModel()), apiResources.Select(x => x.ToModel())));
+			var identityResources = await _documentSession.Query<Entities.IdentityResource>().ToListAsync();
+			var apiResources = await _documentSession.Query<Entities.ApiResource>().ToListAsync();
+
+			return new Resources(
+				identityResources.Select(x => x.ToModel()),
+				apiResources.Select(x => x.ToModel()));
 		}
 	}
 }

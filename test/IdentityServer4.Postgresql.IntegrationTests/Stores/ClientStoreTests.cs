@@ -1,11 +1,7 @@
 ﻿using IdentityServer4.Postgresql.Entities;
 using IdentityServer4.Postgresql.Stores;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using IdentityServer4.Postgresql.Mappers;
 using Xunit;
-using GenFu;
 
 namespace IdentityServer4.Postgresql.IntegrationTests.Stores
 {

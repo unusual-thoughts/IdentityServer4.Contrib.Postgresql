@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace IdentityServer4.Postgresql.Entities
 {
@@ -9,5 +6,6 @@ namespace IdentityServer4.Postgresql.Entities
     {
         public string Type { get; set; }
         public string Value { get; set; }
+        public IDictionary<string, string> Properties { get; } = new Dictionary<string, string>();
     }
 }

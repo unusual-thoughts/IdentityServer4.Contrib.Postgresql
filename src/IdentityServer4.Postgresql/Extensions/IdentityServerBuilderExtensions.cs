@@ -5,9 +5,9 @@ using IdentityServer4.Services;
 using IdentityServer4.Stores;
 using Marten;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.Extensions.Hosting;
 
 namespace IdentityServer4.Postgresql.Extensions
 {
@@ -79,7 +79,7 @@ namespace IdentityServer4.Postgresql.Extensions
             builder.Services.AddSingleton<TokenCleanup>();
             return builder;
         }
-        public static IApplicationBuilder UseIdentityServerTokenCleanup(this IApplicationBuilder app, IApplicationLifetime applicationLifetime)
+        public static IApplicationBuilder UseIdentityServerTokenCleanup(this IApplicationBuilder app, IHostApplicationLifetime applicationLifetime)
         {
             var tokenCleanup = app.ApplicationServices.GetService<TokenCleanup>();
             if (tokenCleanup == null)
