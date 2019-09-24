@@ -1,14 +1,14 @@
 # IdentityServer4.Postgresql
 
-[![Build status](https://ci.appveyor.com/api/projects/status/r4boyo3qkhbrmh8o/branch/master?svg=true)](https://ci.appveyor.com/project/sphiecoh/identityserver4-postgresql/branch/master)
-[ ![Codeship Status for Sphiecoh/IdentityServer4.Postgresql](https://app.codeship.com/projects/325c07d0-1b78-0135-016a-3270df5f1418/status?branch=master)](https://app.codeship.com/projects/219607)
-[![NuGet Version](http://img.shields.io/nuget/v/IdentityServer4.Postgresql.svg?style=flat)](https://www.nuget.org/packages/IdentityServer4.Postgresql/)
+[![Build status](https://ci.appveyor.com/api/projects/status/vgeofxaqxkgf3ija?svg=true)](https://ci.appveyor.com/project/unusual-thoughts/identityserver4-postgresql)
+[![Build status](https://travis-ci.org/unusual-thoughts/IdentityServer4.Postgresql.svg?branch=master)](https://travis-ci.org/unusual-thoughts/IdentityServer4.Postgresql)
+[![NuGet Version](http://img.shields.io/nuget/v/IdentityServer4.Postgresql.svg?style=flat)](https://www.nuget.org/packages/IdentityServer4.Contrib.Postgresql/)
 
-`Install-Package IdentityServer4.Postgresql`
+`Install-Package IdentityServer4.Contrib.Postgresql`
 
 e.g AspNet Core
 ```
-using IdentityServer4.Postgresql.Extensions;
+using IdentityServer4.Contrib.Postgresql.Extensions;
 
 public void ConfigureServices(IServiceCollection services)
 {
