@@ -1,4 +1,4 @@
-﻿namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.Contrib.Postgresql.Entities
 {
     public class ClientPostLogoutRedirectUri
     {

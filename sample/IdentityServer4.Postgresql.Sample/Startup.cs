@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.Postgresql.Extensions;
+using Microsoft.Extensions.Logging;
+using IdentityServer4.Contrib.Postgresql.Extensions;
 using Marten;
 using IdentityServer4.Models;
-using IdentityServer4.Postgresql.Mappers;
-using IdentityServer4.Postgresql.Entities;
-using Microsoft.Extensions.Hosting;
+using IdentityServer4.Contrib.Postgresql.Mappers;
+using IdentityServer4.Contrib.Postgresql.Entities;
 
-namespace IdentityServer4.Postgresql.Sample
+namespace IdentityServer4.Contrib.Postgresql.Sample
 {
 	public class Startup
 	{

@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using static IdentityServer4.IdentityServerConstants;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.Contrib.Postgresql.Entities
 {
     public abstract class Secret
     {

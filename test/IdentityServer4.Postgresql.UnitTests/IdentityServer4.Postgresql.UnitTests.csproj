@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <AssemblyName>IdentityServer4.Postgresql.UnitTests</AssemblyName>
-    <PackageId>IdentityServer4.Postgresql.UnitTests</PackageId>
+    <AssemblyName>IdentityServer4.Contrib.Postgresql.UnitTests</AssemblyName>
+    <PackageId>IdentityServer4.Contrib.Postgresql.UnitTests</PackageId>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>

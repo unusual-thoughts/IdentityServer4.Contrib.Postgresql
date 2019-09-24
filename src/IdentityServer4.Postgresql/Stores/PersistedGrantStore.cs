@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
-using IdentityServer4.Postgresql.Mappers;
+using IdentityServer4.Contrib.Postgresql.Mappers;
 using Marten;
 
-namespace IdentityServer4.Postgresql.Stores
+namespace IdentityServer4.Contrib.Postgresql.Stores
 {
 
     public class PersistedGrantStore : IPersistedGrantStore

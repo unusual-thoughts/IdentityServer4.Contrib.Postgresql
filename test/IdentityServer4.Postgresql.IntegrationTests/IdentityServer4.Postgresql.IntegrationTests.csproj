@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <AssemblyName>IdentityServer4.Postgresql.IntegrationTests</AssemblyName>
-    <PackageId>IdentityServer4.Postgresql.IntegrationTests</PackageId>
+    <AssemblyName>IdentityServer4.Contrib.Postgresql.IntegrationTests</AssemblyName>
+    <PackageId>IdentityServer4.Contrib.Postgresql.IntegrationTests</PackageId>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>

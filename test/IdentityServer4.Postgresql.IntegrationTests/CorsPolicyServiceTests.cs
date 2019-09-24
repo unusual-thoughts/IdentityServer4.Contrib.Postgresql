@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using IdentityServer4.Postgresql.Entities;
+using IdentityServer4.Contrib.Postgresql.Entities;
 using Xunit;
 using FakeItEasy;
 using Microsoft.Extensions.Logging;
-using IdentityServer4.Postgresql.Services;
+using IdentityServer4.Contrib.Postgresql.Services;
 using System.Threading.Tasks;
 
-namespace IdentityServer4.Postgresql.IntegrationTests
+namespace IdentityServer4.Contrib.Postgresql.IntegrationTests
 {
 	public class CorsPolicyServiceTests : IClassFixture<DatabaseFixture>
 	{
@@ -20,7 +20,7 @@ namespace IdentityServer4.Postgresql.IntegrationTests
 		{
 			using (var session = martenFixture.Store.LightweightSession())
 			{
-				var client = new IdentityServer4.Postgresql.Entities.Client
+				var client = new IdentityServer4.Contrib.Postgresql.Entities.Client
 				{
 					ClientId = "test",
 					ClientName = "testclient",
@@ -33,7 +33,7 @@ namespace IdentityServer4.Postgresql.IntegrationTests
 				session.Store(client);
 				session.SaveChanges();
 				var logger = A.Fake<ILogger<CorsPolicyService>>();
-				var sut = new IdentityServer4.Postgresql.Services.CorsPolicyService(logger, session);
+				var sut = new IdentityServer4.Contrib.Postgresql.Services.CorsPolicyService(logger, session);
 				var result = await sut.IsOriginAllowedAsync("http://localhost:123/callback");
 				Assert.True(result);
 

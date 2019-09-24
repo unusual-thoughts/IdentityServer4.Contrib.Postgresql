@@ -1,6 +1,6 @@
-﻿using IdentityServer4.Postgresql.Options;
-using IdentityServer4.Postgresql.Services;
-using IdentityServer4.Postgresql.Stores;
+using IdentityServer4.Contrib.Postgresql.Options;
+using IdentityServer4.Contrib.Postgresql.Services;
+using IdentityServer4.Contrib.Postgresql.Stores;
 using IdentityServer4.Services;
 using IdentityServer4.Stores;
 using Marten;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using Microsoft.Extensions.Hosting;
 
-namespace IdentityServer4.Postgresql.Extensions
+namespace IdentityServer4.Contrib.Postgresql.Extensions
 {
     public static class IdentityServerBuilderExtensions
     {

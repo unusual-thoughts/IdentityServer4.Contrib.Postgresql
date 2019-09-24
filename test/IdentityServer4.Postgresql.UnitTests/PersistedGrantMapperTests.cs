@@ -1,8 +1,8 @@
-﻿using IdentityServer4.Models;
-using IdentityServer4.Postgresql.Mappers;
+using IdentityServer4.Models;
+using IdentityServer4.Contrib.Postgresql.Mappers;
 using Xunit;
 
-namespace IdentityServer4.Postgresql.UnitTests
+namespace IdentityServer4.Contrib.Postgresql.UnitTests
 {
     public class PersistedGrantMapperTests
     {

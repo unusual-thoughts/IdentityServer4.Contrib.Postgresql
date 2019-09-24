@@ -1,9 +1,9 @@
-﻿using IdentityServer4.Models;
+using IdentityServer4.Models;
 using System;
 using System.Collections.Generic;
 using static IdentityServer4.IdentityServerConstants;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.Contrib.Postgresql.Entities
 {
 	public class Client : EntityKey
 	{

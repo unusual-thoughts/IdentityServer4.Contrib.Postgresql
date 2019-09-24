@@ -1,4 +1,4 @@
-﻿namespace IdentityServer4.Postgresql.Options
+namespace IdentityServer4.Contrib.Postgresql.Options
 {
     public class TokenCleanupOptions
     {

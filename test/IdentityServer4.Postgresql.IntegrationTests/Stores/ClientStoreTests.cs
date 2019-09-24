@@ -1,9 +1,10 @@
-﻿using IdentityServer4.Postgresql.Entities;
-using IdentityServer4.Postgresql.Stores;
+using IdentityServer4.Contrib.Postgresql.Entities;
+using IdentityServer4.Contrib.Postgresql.Stores;
+using IdentityServer4.Contrib.Postgresql.Mappers;
 using System.Collections.Generic;
 using Xunit;
 
-namespace IdentityServer4.Postgresql.IntegrationTests.Stores
+namespace IdentityServer4.Contrib.Postgresql.IntegrationTests.Stores
 {
 	public class ClientStoreTests : IClassFixture<DatabaseFixture>
 	{

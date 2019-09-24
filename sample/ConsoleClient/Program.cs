@@ -1,4 +1,4 @@
-﻿using IdentityModel.Client;
+using IdentityModel.Client;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;

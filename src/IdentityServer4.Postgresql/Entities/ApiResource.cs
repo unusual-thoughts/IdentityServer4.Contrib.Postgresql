@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace IdentityServer4.Postgresql.Entities
+namespace IdentityServer4.Contrib.Postgresql.Entities
 {
     public class ApiResource : EntityKey
     {

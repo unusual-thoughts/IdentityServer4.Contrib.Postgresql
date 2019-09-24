@@ -1,6 +1,6 @@
-﻿using AutoMapper;
+using AutoMapper;
 
-namespace IdentityServer4.Postgresql.Mappers
+namespace IdentityServer4.Contrib.Postgresql.Mappers
 {
 
     public static class ApiResourceMappers

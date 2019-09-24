@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace IdentityServer4.Postgresql.Sample
+namespace IdentityServer4.Contrib.Postgresql.Sample
 {
 	public class Program
 	{

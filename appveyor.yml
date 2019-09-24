@@ -19,9 +19,3 @@ build_script:
 test: off
 artifacts:
 - path: artifacts/packages/*.nupkg
-deploy:
-- provider: NuGet
-  server: https://www.myget.org/F/identity-postgresql/api/v2/package/
-  api_key:
-    secure: JE+GsFvzX2jnVTDi2EYZhc4wXF6Lz5FvVPBK9ZlXx1ALM4S0dOPpV4ESOj8/lKWL
-  skip_symbols: true
