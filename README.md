@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/vgeofxaqxkgf3ija?svg=true)](https://ci.appveyor.com/project/unusual-thoughts/identityserver4-postgresql)
 [![Build status](https://travis-ci.org/unusual-thoughts/IdentityServer4.Postgresql.svg?branch=master)](https://travis-ci.org/unusual-thoughts/IdentityServer4.Postgresql)
-[![NuGet Version](http://img.shields.io/nuget/v/IdentityServer4.Postgresql.svg?style=flat)](https://www.nuget.org/packages/IdentityServer4.Contrib.Postgresql/)
+[![NuGet Version](http://img.shields.io/nuget/v/IdentityServer4.Contrib.Postgresql.svg?style=flat)](https://www.nuget.org/packages/IdentityServer4.Contrib.Postgresql/)
 
 `Install-Package IdentityServer4.Contrib.Postgresql`
 
