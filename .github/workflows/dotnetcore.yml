@@ -20,6 +20,6 @@ jobs:
     - name: Upload the artifacts
       uses: actions/upload-artifact@master
       with:
-        name: my-artifact
-        path: path/to/artifact
+        name: nupkg
+        path: 'artifacts/packages/'
 
