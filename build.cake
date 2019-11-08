@@ -36,8 +36,8 @@ Task("RunTests")
 	}; 
 	
 	DotNetCoreTest("./test/IdentityServer4.Postgresql.UnitTests/IdentityServer4.Postgresql.UnitTests.csproj");
-	 if(isLocalBuild)
-	 DotNetCoreTest("./test/IdentityServer4.Postgresql.IntegrationTests/IdentityServer4.Postgresql.IntegrationTests.csproj");
+	 // if(isLocalBuild)
+	 // DotNetCoreTest("./test/IdentityServer4.Postgresql.IntegrationTests/IdentityServer4.Postgresql.IntegrationTests.csproj");
 	
 });
 
